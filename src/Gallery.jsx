@@ -16,7 +16,6 @@ const Gallery = () => {
   }, [data]);
   const newData = getData();
 
-  if (newData.results.length === 0) return <div>now results Found...</div>;
   if (error) return <div>Error loading images.</div>;
 
   return (
